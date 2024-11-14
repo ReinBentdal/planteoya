@@ -6,6 +6,38 @@
     <title>Planteøya</title>
 </head>
 <body>
-    Planteøya
+    <section>
+        <h1>Planteøya</h1>
+        <p id="contact"></p>
+        <img src="/plante.jpg" alt="planteøya demo" />
+    </section>
 </body>
+<style>
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-weight: 300;
+    font-size: 2em;
+}
+section {
+    max-width: 1000px;
+    min-width: 400px;
+    width: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 100%;
+}
+</style>
+<script>
+    let contact = document.getElementById('contact');
+    const first = 'hannekie'
+    const second = 'rulf@wemail.no'
+    contact.innerHTML = `<a href="mailto:${first+second}">${first+second}</a>`
+</script>
 </html>
