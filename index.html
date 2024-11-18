@@ -7,23 +7,24 @@
 </head>
 <body>
     <section>
-        <h1>PlanteØya</h1>
-        <img src="/plante_compress.jpg" alt="planteøya demo" />
+        <h1>Plante<span>Øya</span></h1>
+        <img src="/images/plante_compress.jpg" alt="planteøya demo" />
     </section>
     <footer>
-        <span>Hanne Kierulf</span>
+        <span>© Hanne Kierulf</span>
         <span>•</span>
         <span id="contact"></span>
     </footer>
 </body>
 <style>
+@import url('https://fonts.cdnfonts.com/css/switzer');
 html {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Switzer', sans-serif;
 }
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #141314;
     color: white;
 
     display: flex;
@@ -32,8 +33,11 @@ body {
     min-height: 100vh;
 }
 h1 {
-    font-weight: 300;
-    font-size: 2em;
+    font-weight: 400;
+    font-size: 4em;
+}
+h1 > span {
+    font-weight: 200;
 }
 section {
 
@@ -59,12 +63,12 @@ footer {
 }
 a {
     color: white;
-    opacity: 0.7;
-    font-style: italic;
-    text-decoration: none;
+    /* opacity: 0.7; */
+    /* font-style: italic; */
+    /* text-decoration: none; */
 }
 a:hover {
-    text-decoration: underline;
+    opacity: 0.8;
 }
 </style>
 <script>
